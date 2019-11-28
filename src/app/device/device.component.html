@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6" *ngFor="let mobile of swamy">
+            <label>Device Id:{{mobile.Id}}</label>
+            <label>Device Name:{{mobile.Name}}</label>
+            <label><a [routerLink]="['/device-details',mobile.Id]">View More</a></label>
+        </div>
+    </div>
+</div>
+ <!-- routerLinkActive="active" -->
+<!-- <router-outlet></router-outlet> -->
